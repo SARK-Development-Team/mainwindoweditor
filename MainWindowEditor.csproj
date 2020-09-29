@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17C26B62-85E8-41B3-BA71-F0E946EBB285}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MainWindowEditor</RootNamespace>
+    <AssemblyName>MainWindowEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs" />
+    <Compile Include="Controls\AlarmSmallPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AlarmSmallPanel.Designer.cs">
+      <DependentUpon>AlarmSmallPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ClientInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ClientInfoPanel.Designer.cs">
+      <DependentUpon>ClientInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AdminPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddClientPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AddClientTab.Designer.cs">
+      <DependentUpon>AddClientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DataPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DataPanel.Designer.cs">
+      <DependentUpon>DataPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NotificationsSmallPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NotificationsSmallPanel.Designer.cs">
+      <DependentUpon>NotificationsSmallPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IconCircle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IconCircle.designer.cs">
+      <DependentUpon>IconCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavBar.Designer.cs">
+      <DependentUpon>NavBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Old\ClientPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Old\ClientPanel.Designer.cs">
+      <DependentUpon>ClientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IconLabelButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IconLabelButton.Designer.cs">
+      <DependentUpon>IconLabelButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Old\StagePanelOLD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Old\StagePanelOLD.Designer.cs">
+      <DependentUpon>StagePanelOLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Timeline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Timeline.Designer.cs">
+      <DependentUpon>Timeline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Old\SubmitPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Old\SubmitPanel.Designer.cs">
+      <DependentUpon>SubmitPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EmailPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EmailPanel.Designer.cs">
+      <DependentUpon>EmailPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EmployeeItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EmployeeItem.Designer.cs">
+      <DependentUpon>EmployeeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBuilder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MessageBuilder.Designer.cs">
+      <DependentUpon>MessageBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Junk\LeftPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Junk\LeftPanel.Designer.cs">
+      <DependentUpon>LeftPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Junk\LeftPanelMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Junk\LeftPanelMain.Designer.cs">
+      <DependentUpon>LeftPanelMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PointyPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PointyPanel.Designer.cs">
+      <DependentUpon>PointyPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Junk\RightPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Junk\RightPanel.Designer.cs">
+      <DependentUpon>RightPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Junk\TestingPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Junk\TestingPanel.Designer.cs">
+      <DependentUpon>TestingPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets.cs" />
+    <Compile Include="Controls\TextPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TextPanel.Designer.cs">
+      <DependentUpon>TextPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StagesBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StagesBar.Designer.cs">
+      <DependentUpon>StagesBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StagesPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StagesPanel.Designer.cs">
+      <DependentUpon>StagesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stages\EmailStage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Stages\EmailStage.Designer.cs">
+      <DependentUpon>EmailStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stages\RunStage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Stages\RunStage.Designer.cs">
+      <DependentUpon>RunStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="temp.Designer.cs">
+      <DependentUpon>temp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimelineItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimelineItem.Designer.cs">
+      <DependentUpon>TimelineItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TransferPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TransferPanel.Designer.cs">
+      <DependentUpon>TransferPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessagePreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MessagePreview.Designer.cs">
+      <DependentUpon>MessagePreview.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\AlarmSmallPanel.resx">
+      <DependentUpon>AlarmSmallPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ClientInfoPanel.resx">
+      <DependentUpon>ClientInfoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AddClientPanel.resx">
+      <DependentUpon>AddClientPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DataPanel.resx">
+      <DependentUpon>DataPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\IconLabelButton.resx">
+      <DependentUpon>IconLabelButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NotificationsSmallPanel.resx">
+      <DependentUpon>NotificationsSmallPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Timeline.resx">
+      <DependentUpon>Timeline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EmailPanel.resx">
+      <DependentUpon>EmailPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\IconCircle.resx">
+      <DependentUpon>IconCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavBar.resx">
+      <DependentUpon>NavBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old\SubmitPanel.resx">
+      <DependentUpon>SubmitPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EmployeeItem.resx">
+      <DependentUpon>EmployeeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBuilder.resx">
+      <DependentUpon>MessageBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Junk\LeftPanel.resx">
+      <DependentUpon>LeftPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Junk\LeftPanelMain.resx">
+      <DependentUpon>LeftPanelMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Junk\RightPanel.resx">
+      <DependentUpon>RightPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Junk\TestingPanel.resx">
+      <DependentUpon>TestingPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextPanel.resx">
+      <DependentUpon>TextPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StagesPanel.resx">
+      <DependentUpon>StagesPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stages\EmailStage.resx">
+      <DependentUpon>EmailStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stages\RunStage.resx">
+      <DependentUpon>RunStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temp.resx">
+      <DependentUpon>temp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimelineItem.resx">
+      <DependentUpon>TimelineItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TransferPanel.resx">
+      <DependentUpon>TransferPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessagePreview.resx">
+      <DependentUpon>MessagePreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipsis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hamburger_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-new-contact-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-property-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-alarm-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-settings-male-64.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MainWindowEditor.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="VisibilityTrue" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DockFill" Type="System.Windows.Forms.DockStyle" Scope="User">
+      <Value Profile="(Default)">Fill</Value>
+    </Setting>
+    <Setting Name="NameDefault" Type="System.String" Scope="User">
+      <Value Profile="(Default)">templateBrowser</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
